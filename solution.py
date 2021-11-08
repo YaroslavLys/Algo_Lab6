@@ -8,10 +8,10 @@ class Solution:
             return [1]
         list_of_squares = []
         i = 0
-        length = 0
-        while len(str(length)) < len(n):
-            list_of_squares.append(x ** i)
-            length = format(x ** i, "b")
+        square = 0
+        while square < int(n, 2):
+            square = x ** i
+            list_of_squares.append(square)
             i += 1
         return list_of_squares
 
